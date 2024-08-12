@@ -127,7 +127,7 @@ const AboutUs = () => {
 
       {/* Team Members Section */}
       <div>
-        <h3 className="text-2xl font-bold mb-4 text-center">Meet Our Team</h3>
+        <h2 className="text-2xl font-bold mb-4 text-center">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
             <div key={index} className="p-4 bg-white shadow-md rounded-md hover:shadow-lg transition-shadow duration-300">

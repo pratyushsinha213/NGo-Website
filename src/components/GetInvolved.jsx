@@ -1,5 +1,11 @@
-
+// style={{fontFamily: "Permanent Marker", fontSize: "3rem"}}
 const GetInvolved = () => {
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert('Form Submitted SUCCESSFULLY!');
+    };
+
     return (
         <div className="max-w-screen-lg mx-auto p-5">
             <h1 className="text-3xl font-bold text-center my-8">Get Involved</h1>
@@ -26,7 +32,7 @@ const GetInvolved = () => {
             {/* Volunteer Form Section */}
             <section className="mb-12">
                 <h2 className="text-2xl font-bold mb-4">Volunteer Information Form</h2>
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
                         <input type="text" id="name" className="mt-1 p-2 w-full border border-gray-300 rounded-md" required />

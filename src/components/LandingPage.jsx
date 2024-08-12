@@ -13,7 +13,7 @@ const LandingPage = () => {
     <div className="bg-gray-100 min-h-screen items-center text-center">
       {/* Sticky Header Section */}
       <div className="sticky top-0 flex flex-col bg-gray-100 p-4 w-full z-10">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our NGO</h1>
+        <h1 className="text-4xl font-bold mb-4" >Welcome to Our NGO</h1>
         <p className="text-lg mb-8">
           Our mission is to make the world a better place.
         </p>
