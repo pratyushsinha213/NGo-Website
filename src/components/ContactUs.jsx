@@ -2,7 +2,6 @@
 const ContactUs = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle form submission
         alert('Message sent!');
     };
 
@@ -71,12 +70,11 @@ const ContactUs = () => {
                 {/* Google Maps Embed */}
                 <div className="w-full h-64">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.290351418577!2d-122.4064174846846!3d37.78337877975831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d71e1bfa1%3A0x57f9175bda7e14e4!2s1%20Market%20St%2C%20San%20Francisco%2C%20CA%2094111%2C%20USA!5e0!3m2!1sen!2sin!4v1630632931224!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0410799818237!2d79.15335867587679!3d12.96922318734597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1723460581591!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
                         allowFullScreen
-                        loading="lazy"
                         title="Google Maps Location"
                     ></iframe>
                 </div>

@@ -3,6 +3,9 @@ import { useState } from 'react';
 const AboutUs = () => {
   const [showHistory, setShowHistory] = useState(false);
   const [showMission, setShowMission] = useState(false);
+  const [showVision, setShowVision] = useState(false);
+  const [showValues, setShowValues] = useState(false);
+  const [showGoals, setShowGoals] = useState(false);
 
   const teamMembers = [
     {
@@ -40,10 +43,10 @@ const AboutUs = () => {
   return (
     <div className="p-8 bg-gray-100">
       <h2 className="text-3xl font-bold mb-4 text-center">About Us</h2>
-      
+
       {/* History Section */}
       <div className="mb-6">
-        <button 
+        <button
           onClick={() => setShowHistory(!showHistory)}
           className="w-full text-left text-xl font-semibold p-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none">
           Our History
@@ -59,7 +62,7 @@ const AboutUs = () => {
 
       {/* Mission Section */}
       <div className="mb-6">
-        <button 
+        <button
           onClick={() => setShowMission(!showMission)}
           className="w-full text-left text-xl font-semibold p-4 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none">
           Our Mission
@@ -72,6 +75,55 @@ const AboutUs = () => {
           </div>
         )}
       </div>
+
+      {/* Vision Section */}
+      <div className="mb-6">
+        <button
+          onClick={() => setShowVision(!showVision)}
+          className="w-full text-left text-xl font-semibold p-4 bg-purple-500 text-white rounded-md hover:bg-purple-600 focus:outline-none">
+          Our Vision
+        </button>
+        {showVision && (
+          <div className="mt-4 p-4 bg-white shadow-md rounded-md">
+            <p>
+              Our vision is a world where everyone has access to the resources they need to lead healthy, fulfilling lives. We believe in a future where poverty and inequality are eradicated.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Values Section */}
+      <div className="mb-6">
+        <button
+          onClick={() => setShowValues(!showValues)}
+          className="w-full text-left text-xl font-semibold p-4 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none">
+          Our Values
+        </button>
+        {showValues && (
+          <div className="mt-4 p-4 bg-white shadow-md rounded-md">
+            <p>
+              We are guided by values of integrity, compassion, and innovation. These principles drive our work and help us achieve our mission of empowering communities worldwide.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Goals Section */}
+      <div className="mb-6">
+        <button
+          onClick={() => setShowGoals(!showGoals)}
+          className="w-full text-left text-xl font-semibold p-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none">
+          Our Goals
+        </button>
+        {showGoals && (
+          <div className="mt-4 p-4 bg-white shadow-md rounded-md">
+            <p>
+              Our goals include expanding our projects to reach more communities, increasing volunteer engagement, and raising awareness about the issues we address through our work.
+            </p>
+          </div>
+        )}
+      </div>
+
 
       {/* Team Members Section */}
       <div>

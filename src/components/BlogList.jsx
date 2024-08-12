@@ -17,7 +17,6 @@ const blogData = [
     date: 'August 5, 2024',
     image: 'https://via.placeholder.com/300',
   },
-  // Add more blog posts here...
 ];
 
 const BlogList = () => {

@@ -8,7 +8,7 @@ const eventsData = [
         date: 'September 15, 2024',
         time: '8:00 AM - 12:00 PM',
         location: 'Central Park, New York City',
-        registrationLink: 'https://example.com/register/charity-run',
+        registrationLink: 'https://example.com/',
         image: 'https://via.placeholder.com/300',
     },
     {
@@ -18,7 +18,7 @@ const eventsData = [
         date: 'October 5, 2024',
         time: '10:00 AM - 4:00 PM',
         location: 'Community Center, Brooklyn, NYC',
-        registrationLink: 'https://example.com/register/youth-leadership',
+        registrationLink: 'https://example.com/',
         image: 'https://via.placeholder.com/300',
     },
     {
@@ -28,7 +28,7 @@ const eventsData = [
         date: 'November 12, 2024',
         time: '9:00 AM - 3:00 PM',
         location: 'Green Valley Farm, New Jersey',
-        registrationLink: 'https://example.com/register/farming-seminar',
+        registrationLink: 'https://example.com/',
         image: 'https://via.placeholder.com/300',
     },
 ];
