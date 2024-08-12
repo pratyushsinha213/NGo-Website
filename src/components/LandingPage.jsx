@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
-// Sample images (replace with actual image URLs or import local images)
 const coreValuesImage = "https://via.placeholder.com/400";
 const achievementsImage = "https://via.placeholder.com/400";
 const getInvolvedImage = "https://via.placeholder.com/400";
