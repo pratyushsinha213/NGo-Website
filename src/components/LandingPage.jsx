@@ -38,19 +38,19 @@ const LandingPage = () => {
     <div className="bg-gray-100 min-h-screen items-center text-center">
       {/* Sticky Header Section */}
       <div className="sticky top-0 flex flex-col bg-gray-100 p-4 w-full z-10">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our NGO</h1>
+        <h1 className="text-4xl font-bold mb-4 mt-4">Welcome to Our NGO</h1>
         <p className="text-lg mb-8">
           Our mission is to make the world a better place.
         </p>
         <Link to="/get-involved">
-          <button className="bg-red-500 text-white px-6 py-2 rounded-md transition duration-300 hover:bg-green-600">
+          <button className=" bg-red-500 text-white px-6 py-2 rounded-md transition duration-300 hover:bg-green-600">
             Join Us in Making a Difference!
           </button>
         </Link>
       </div>
 
       {/* Cards Section */}
-      <div className="mx-80 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="py-10 px-4 sm:px-6 lg:px-8 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cardData.map((card, index) => (
           <div key={index} className="p-4 bg-white shadow-md rounded-md hover:shadow-lg transition-shadow duration-300">
             <img src={card.image} alt={card.title} className="w-full rounded-md mb-4" />
