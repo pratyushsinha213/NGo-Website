@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Person from '../assets/team.jpg';
 
 const AboutUs = () => {
   const [showHistory, setShowHistory] = useState(false);
@@ -11,31 +12,36 @@ const AboutUs = () => {
     {
       name: 'John Doe',
       role: 'CEO & Founder',
-      image: 'https://via.placeholder.com/150',
+      // image: 'https://via.placeholder.com/150',
+      image: Person,
       description: 'John has over 20 years of experience in the non-profit sector, leading initiatives that have transformed communities worldwide.',
     },
     {
       name: 'Jane Smith',
       role: 'Chief Operating Officer',
-      image: 'https://via.placeholder.com/150',
+      // image: 'https://via.placeholder.com/150',
+      image: Person,
       description: 'Jane oversees day-to-day operations, ensuring that our projects run smoothly and efficiently.',
     },
     {
       name: 'Alice Johnson',
       role: 'Director of Development',
-      image: 'https://via.placeholder.com/150',
+      // image: 'https://via.placeholder.com/150',
+      image: Person,
       description: 'Alice leads our fundraising efforts, building partnerships that support our mission and goals.',
     },
     {
       name: 'Robert Brown',
       role: 'Program Manager',
-      image: 'https://via.placeholder.com/150',
+      // image: 'https://via.placeholder.com/150',
+      image: Person,
       description: 'Robert manages our programs, ensuring they meet the needs of the communities we serve.',
     },
     {
       name: 'Emily Davis',
       role: 'Communications Director',
-      image: 'https://via.placeholder.com/150',
+      // image: 'https://via.placeholder.com/150',
+      image: Person,
       description: 'Emily is responsible for our public relations and communications, helping to share our story with the world.',
     },
   ];
@@ -131,7 +137,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
             <div key={index} className="p-4 bg-white shadow-md rounded-md hover:shadow-lg transition-shadow duration-300">
-              <img src={member.image} alt={member.name} className="w-full rounded-md mb-4" />
+              <img src={member.image} alt={member.name} style={{width: "auto", height: "400px"}} className="w-full rounded-md mb-4" />
               <h4 className="text-xl font-semibold">{member.name}</h4>
               <p className="text-gray-600">{member.role}</p>
               <p className="text-sm mt-2">{member.description}</p>

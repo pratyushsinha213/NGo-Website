@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Project from '../assets/projects.jpg';
 
 const projectsData = [
   {
@@ -7,28 +8,33 @@ const projectsData = [
     title: 'Clean Water Initiative',
     description: 'Providing access to clean and safe drinking water in rural areas.',
     status: 'Ongoing',
-    image: 'https://via.placeholder.com/300',
+    // image: 'https://via.placeholder.com/300',
+    image: Project,
+
   },
   {
     id: 2,
     title: 'Education for All',
     description: 'Ensuring quality education for underprivileged children.',
     status: 'Completed',
-    image: 'https://via.placeholder.com/300',
+    // image: 'https://via.placeholder.com/300',
+    image: Project,
   },
   {
     id: 3,
     title: 'Healthcare Outreach',
     description: 'Bringing medical care to remote communities.',
     status: 'Ongoing',
-    image: 'https://via.placeholder.com/300',
+    // image: 'https://via.placeholder.com/300',
+    image: Project,
   },
   {
     id: 4,
     title: 'Sustainable Agriculture',
     description: 'Promoting sustainable farming practices among local farmers.',
     status: 'Completed',
-    image: 'https://via.placeholder.com/300',
+    // image: 'https://via.placeholder.com/300',
+    image: Project,
   },
 ];
 
@@ -67,7 +73,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
           <div key={project.id} className="p-4 bg-white shadow-md rounded-md hover:shadow-lg transition-shadow duration-300">
-            <img src={project.image} alt={project.title} className="w-full rounded-md mb-4" />
+            <img src={project.image} alt={project.title} style={{width: 'auto', height: '400px'}} className="w-full rounded-md mb-4" />
             <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
             <p className="text-gray-600">{project.description}</p>
             <p className="mt-2 text-sm"><strong>Status:</strong> {project.status}</p>

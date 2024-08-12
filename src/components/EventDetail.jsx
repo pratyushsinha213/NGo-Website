@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import Charity from '../assets/charity.jpg';
 
 const eventsData = [
     {
@@ -9,7 +10,8 @@ const eventsData = [
         time: '8:00 AM - 12:00 PM',
         location: 'Central Park, New York City',
         registrationLink: 'https://example.com/',
-        image: 'https://via.placeholder.com/300',
+        // image: 'https://via.placeholder.com/300',
+        image: Charity,
     },
     {
         id: 2,
@@ -19,7 +21,8 @@ const eventsData = [
         time: '10:00 AM - 4:00 PM',
         location: 'Community Center, Brooklyn, NYC',
         registrationLink: 'https://example.com/',
-        image: 'https://via.placeholder.com/300',
+        // image: 'https://via.placeholder.com/300',
+        image: Charity,
     },
     {
         id: 3,
@@ -29,7 +32,8 @@ const eventsData = [
         time: '9:00 AM - 3:00 PM',
         location: 'Green Valley Farm, New Jersey',
         registrationLink: 'https://example.com/',
-        image: 'https://via.placeholder.com/300',
+        // image: 'https://via.placeholder.com/300',
+        image: Charity,
     },
 ];
 
